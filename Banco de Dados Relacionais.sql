@@ -16,7 +16,7 @@ insert into tb_classe(nomeJogo, tipoGame, fases) values ("Brain", "Lógica", 20)
 insert into tb_classe(nomeJogo, tipoGame, fases) values ("Build", "Design", 3);
 insert into tb_classe(nomeJogo, tipoGame, fases) values ("Cook", "Culinária", 5);
 
-
+update tb_classe set fases = 3 where id = 3;
 select * from tb_classe;
 
 create table tb_personagens (
@@ -41,6 +41,8 @@ insert into tb_personagens  (nomePersonagem, funcao, poderAtaque, poderDefesa, a
 insert into tb_personagens  (nomePersonagem, funcao, poderAtaque, poderDefesa, acessorio, classe_id) values ("Morgan","Aluno",2000, 1233, true, 3);
 insert into tb_personagens  (nomePersonagem, funcao, poderAtaque, poderDefesa, acessorio, classe_id) values ("João","Engenheiro",800, 900, true, 4);
 insert into tb_personagens  (nomePersonagem, funcao, poderAtaque, poderDefesa, acessorio, classe_id) values ("Maria","Cozinheira",950, 800, true, 5);
+
+update tb_personagens set acessorio = false where id = 9;
 
 select*from tb_personagens;
 
